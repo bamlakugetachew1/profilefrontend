@@ -29,7 +29,7 @@ export default {
         alert("ALL FILDS ARE REQUIRED");
       } else {
         await axios
-          .post("http://localhost:3000/messages/addmessages", {
+          .post("https://cute-teal-sea-lion-yoke.cyclic.app/messages/addmessages", {
             username: this.username,
             useremail: this.useremail,
             messages: this.messages,
@@ -47,7 +47,7 @@ export default {
     },
     async downloadprofile() {
       axios({
-        url: "http://localhost:3000/messages/download",
+        url: "https://cute-teal-sea-lion-yoke.cyclic.app/messages/download",
         method: "GET",
         responseType: "blob",
       }).then((response) => {
