@@ -47,7 +47,7 @@ export default {
     },
     async downloadprofile() {
       axios({
-        url: "https://cute-teal-sea-lion-yoke.cyclic.app/messages/download",
+        url: "https://cute-teal-sea-lion-yoke.cyclic.app/cv/image.pdf",
         method: "GET",
         responseType: "blob",
       }).then((response) => {
