@@ -54,7 +54,7 @@ export default {
         var fileURL = window.URL.createObjectURL(new Blob([response.data]));
         var fURL = document.createElement("a");
         fURL.href = fileURL;
-        fURL.setAttribute("download", "bamlaku_getachew_cv.pdf");
+        fURL.setAttribute("download", "bamlaku_getachew_cv.jpg");
         document.body.appendChild(fURL);
         fURL.click();
       });
