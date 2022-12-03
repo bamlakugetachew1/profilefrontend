@@ -47,14 +47,14 @@ export default {
     },
     async downloadprofile() {
       axios({
-        url: "https://cute-teal-sea-lion-yoke.cyclic.app/cv/image.pdf",
+        url: "https://cute-teal-sea-lion-yoke.cyclic.app/messages/download",
         method: "GET",
         responseType: "blob",
       }).then((response) => {
         var fileURL = window.URL.createObjectURL(new Blob([response.data]));
         var fURL = document.createElement("a");
         fURL.href = fileURL;
-        fURL.setAttribute("download", "profile.pdf");
+        fURL.setAttribute("download", "bamlaku.jpg");
         document.body.appendChild(fURL);
         fURL.click();
       });
