@@ -10,8 +10,7 @@ var socket = io("https://chatapp-wdwk.onrender.com/", {
 });
 socket.on("connect", async () => {
 
-
-      
+    document.getElementById("giveinfo").textContent = " ";
     if(sessionStorage.getItem("reconnected") == "true"){
 
       socket.emit("joingroup", {
@@ -41,20 +40,12 @@ socket.on("connect", async () => {
         sessionStorage.setItem("reconnected","false");
    
     }
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
 socket.on("disconnect", function () {
+
+   document.getElementById("giveinfo").textContent = "attempting secure connections err on connections  ... ";
+   window.scrollTo({ top: 0, behavior: 'smooth' });
 
 });
 
@@ -260,6 +251,8 @@ export default {
             </li>
           </ul>
         </nav>
+        
+         <p class="capitalize text-center animate-bounce mx-14" id="giveinfo"></p> 
 
         <div class="flex mt-3 mx-3 md:mx-10 lg:mx-20 xl:mx-25">
           <div class="bg-sky-100 w-1/4 pt-3 pl-3">
