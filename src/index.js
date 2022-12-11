@@ -21,8 +21,8 @@ const routes = [
 
       {
         path: "/homepage",
-        name: "homePage",
-        component: homePage,
+        name: "homepage",
+        component: homepage,
       },
 
       {
