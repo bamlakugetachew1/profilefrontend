@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import room from './components/room.vue'
-import homePage from './components/homePage.vue'
+import homepage from './components/homepage.vue'
 import login from './components/login.vue'
 
 import App from './App.vue'
