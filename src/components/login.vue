@@ -17,7 +17,7 @@ export default {
       } else {
         sessionStorage.setItem("username", this.username);
         router.push({
-          name: "homePage",
+          name: "homepage",
         });
       }
     },
