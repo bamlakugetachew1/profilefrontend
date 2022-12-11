@@ -8,10 +8,16 @@ var socket = io("http://localhost:3000", {
   "reconnection limit": 5000,
   "max reconnection attempts": 100,
 });
-socket.on("connect", async () => {});
-socket.on("disconnect", function () {});
+socket.on("connect", async () => {
+    console.log("connected");
+});
+socket.on("disconnect", function () {
+    console.log("disconnected");
+});
 
 socket.io.on("reconnect", async () => {
+  console.log("attempts to connect");
+
   // console.log("attempts to reconnect");
   // console.log(socket.connected); // true
   // // ...
