@@ -159,7 +159,7 @@ export default {
     logoutroom() {
       socket.emit("terminate");
       router.push({
-        name: "homePage",
+        name: "homepage",
       });
     },
 
