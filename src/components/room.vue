@@ -2,7 +2,7 @@
 import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
 import router from "../index.js";
 import axios from "axios";
-var socket = io("http://localhost:3000", {
+var socket = io("https://chatapp-wdwk.onrender.com/", {
   reconnect: true,
   "reconnection delay": 1000,
   "reconnection limit": 5000,
@@ -178,7 +178,7 @@ export default {
 
     async getmembers() {
       var url =
-        "http://localhost:3000/topic/getmembers/" +
+        "https://chatapp-wdwk.onrender.com/topic/getmembers/" +
         this.topicname +
         "/" +
         this.username +
