@@ -9,22 +9,57 @@ var socket = io("https://chatapp-wdwk.onrender.com/", {
   "max reconnection attempts": 100,
 });
 socket.on("connect", async () => {
-    console.log("connected");
+
+
+      
+    if(sessionStorage.getItem("reconnected") == "true"){
+
+      socket.emit("joingroup", {
+        groupname: sessionStorage.getItem("topicname"),
+        username: sessionStorage.getItem("username"),
+      });
+
+      var url =
+        "https://chatapp-wdwk.onrender.com/topic/getmembers/" +
+        sessionStorage.getItem("topicname") +
+        "/" +
+        sessionStorage.getItem("username")+
+        "/" +
+        "amharic";
+      await axios
+        .post(url)
+        .then((response) => {
+          socket.emit("groupmem", {
+            lengthof: response.data.data.members.length,
+            data: response.data.data.members,
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+        sessionStorage.setItem("reconnected","false");
+   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 });
 socket.on("disconnect", function () {
-    console.log("disconnected");
+
 });
 
 socket.io.on("reconnect", async () => {
-  console.log("attempts to connect");
-
-  // console.log("attempts to reconnect");
-  // console.log(socket.connected); // true
-  // // ...
-  //      await socket.emit("attemptstoreconnects", {
-  //            topicname:sessionStorage.getItem("topicname"),
-  //            username:sessionStorage.getItem("username"),
-  //           });
+  sessionStorage.setItem("reconnected","true");
 });
 
 function apendmessage(data) {
