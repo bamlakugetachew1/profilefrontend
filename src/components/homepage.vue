@@ -55,7 +55,7 @@ export default {
         alert("topic should be provided");
       } else {
         var url =
-          "http://localhost:3000/topic/getmembers/" +
+          "https://chatapp-wdwk.onrender.com/topic/getmembers/" +
           this.topicname +
           "/" +
           this.username +
@@ -74,7 +74,7 @@ export default {
     },
 
     async getallgroups() {
-      var url = "http://localhost:3000/topic/allgroups";
+      var url = "https://chatapp-wdwk.onrender.com/topic/allgroups";
       await axios
         .get(url)
         .then((res) => {
