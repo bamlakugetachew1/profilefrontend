@@ -454,10 +454,8 @@ export default {
               class="pb-5 font-sans leading-7 text-gray-800 text-md mx-10 text-center"
             >
               a group chatting application that let womens and other socity memebers disscus
-              on various issues,this particular project developes with new
-              Technology like
-              node,socket io,express,javascript-original,Tailwind css and some
-              trends
+              on various issues,this particular project developes with new Technology like
+              node,socket io,express,javascript-original,Tailwind css and some trends
               
             </p>
             <a
