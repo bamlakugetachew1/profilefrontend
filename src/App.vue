@@ -438,6 +438,63 @@ export default {
               </svg>
             </a>
           </div>
+          
+          
+          
+          
+           <br /><br />
+          <div
+            :class="this.display == 0 ? 'bg-zinc-400' : 'bg-white'"
+            class="pt-5 rounded-md mx-3 shadow-sm"
+          >
+            <h3 class="text-center pb-3 text-xl text-gray-800 pt-5 font-serif">
+              LET'S CHAT
+            </h3>
+            <p
+              class="pb-5 font-sans leading-7 text-gray-800 text-md mx-10 text-center"
+            >
+              a group chatting application that let womens and other socity memebers disscus
+              on various issues including family planning and other key factors dedicated to
+              womens,this particular project developes with new
+              Technology like
+              node,socket io,express,javascript-original,Tailwind css and some
+              trends
+              
+            </p>
+            <a
+              href="https://letschatwithfreedom.netlify.app/"
+              target="_blank"
+              class="flex justify-center gap-3 pb-10"
+              :class="this.display == 0 ? 'text-slate-100' : ' text-cyan-500'"
+            >
+              visit
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </a>
+          </div>
+          
+          
+         
+          
+          
+          
         </div>
 
         <h3
