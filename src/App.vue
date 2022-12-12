@@ -453,9 +453,12 @@ export default {
             <p
               class="pb-5 font-sans leading-7 text-gray-800 text-md mx-10 text-center"
             >
-              a group chatting application that let womens and other socity memebers disscus
-              on various issues,this particular project developes with new Technology like
-              node,socket io,express
+                a chatting website that let us womens and other socity memebers to 
+              disscuss comfort of their home,that allowes user make a chat and
+              reflect their ideas, this particular project developes with new
+              Technology like
+              node js,socket io,express,javascript-original,jquery,sass,tailwind cssand some
+              trends
             </p>
             <a
               href="https://letschatwithfreedom.netlify.app/"
