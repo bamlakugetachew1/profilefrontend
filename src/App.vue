@@ -346,7 +346,7 @@ export default {
           Portfolio and Projects
         </h3>
 
-        <div class="lg:flex gap-10">
+        <div class="lg:flex justify-between gap-3">
           <div
             :class="this.display == 0 ? 'bg-zinc-400' : 'bg-white'"
             class="pt-5 rounded-md mx-3 shadow-sm"
