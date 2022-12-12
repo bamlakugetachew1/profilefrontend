@@ -455,8 +455,7 @@ export default {
             >
               a group chatting application that let womens and other socity memebers disscus
               on various issues,this particular project developes with new Technology like
-              node,socket io,express,javascript-original,Tailwind css and some trends
-              
+              node,socket io,express
             </p>
             <a
               href="https://letschatwithfreedom.netlify.app/"
