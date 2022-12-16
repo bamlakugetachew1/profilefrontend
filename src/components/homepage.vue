@@ -259,7 +259,7 @@ export default {
         </div>
 
         <div
-          class="text-center pb-7 pt-14 text-2xl text-gray-800 font-serif"
+          class="text-center pb-7  mt-auto text-2xl text-gray-800 font-serif"
         >
           <h3
             class="text-center pb-2 pt-5 text-2xl text-gray-800 lg:pt-10 font-serif capitalize"
