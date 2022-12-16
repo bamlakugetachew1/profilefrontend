@@ -218,7 +218,7 @@ export default {
         </h3>
        <p v-if="this.availlablegroups.length == 0" class="capitalize text-center  mx-14 mt-3 mb-2" >not found avalliable groups please creat one</p> 
 
-        <div class="md:flex flex-wrap justify-between gap-3">
+        <div id="content" class="md:flex flex-wrap justify-between gap-3">
           <div
             v-for="groups in this.availlablegroups"
             :key="groups._id"
@@ -283,4 +283,8 @@ export default {
   </html>
 </template>
 
-<style scoped></style>
+<style scoped>
+  #content{min-height: calc(100vh - 100px);}
+
+
+</style>
