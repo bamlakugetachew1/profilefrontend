@@ -287,14 +287,9 @@ export default {
 </template>
 
 <style scoped>
-body {
-    display: flex;
-    flex-direction: column;
-}
 
-#footer {
-    margin-top: auto;
-}
+  #content{min-height: calc(60vh - 100px);}
+
 
 
 </style>
