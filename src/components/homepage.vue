@@ -109,7 +109,8 @@ export default {
     </head>
 
     <body :class="this.display == 1 ? ' bg-gray-200' : 'bg-zinc-500'">
-     
+           <div  id="content">
+
       <!--  -->
       <div class="pt-8 md:px-20 lg:px-40">
         <nav class="flex justify-between px-5">
@@ -218,7 +219,7 @@ export default {
         </h3>
        <p v-if="this.availlablegroups.length == 0" class="capitalize text-center  mx-14 mt-3 mb-2" >not found avalliable groups please creat one</p> 
 
-        <div id="content" class="md:flex flex-wrap justify-between gap-3">
+        <div class="md:flex flex-wrap justify-between gap-3">
           <div
             v-for="groups in this.availlablegroups"
             :key="groups._id"
@@ -256,6 +257,8 @@ export default {
             </button>
           </div>
           <br /><br />
+        </div>
+
         </div>
 
         <div
