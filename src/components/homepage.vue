@@ -261,7 +261,7 @@ export default {
 
         </div>
 
-        <div
+        <div id="footer"
           class="text-center pb-7  mt-auto text-2xl text-gray-800 font-serif"
         >
           <h3
@@ -287,7 +287,14 @@ export default {
 </template>
 
 <style scoped>
-  #content{min-height: calc(50vh - 100px);}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+}
 
 
 </style>
